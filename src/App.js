@@ -1,24 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [changeMind, setChangeMind] = useState(true);
+  const [count, setCount] = useState(1000);
+  const [results, setResults] = useState();
+  const monty = () => {
+    fetch(`http://localhost:4080/monty?count=${count}&nah=${changeMind}`, {
+      headers: {
+        'Access-Control-Allow-Origin': 'http://localhost:4080/'
+      }
+    }).then((response) => response.json()).then(json => {
+      console.log(json);
+      setResults(json);
+    });
+  };
+  const play = () => {
+    monty();
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Monty Hall</h1>
       </header>
+      <main className="App-main">
+        <form onSubmit={e => e.preventDefault()} className="App-form">
+          <div className="App-input">
+            <label htmlFor="changeMind">
+              You've chosen a door, would you like to change your mind?
+            </label>
+            <input
+              type="checkbox"
+              id="changeMind"
+              checked={changeMind}
+              onChange={(event) => setChangeMind(event.target.checked)} />
+          </div>
+          <div className="App-input">
+            <input
+              type="number"
+              value={count}
+              onChange={e => setCount(e.target.valueAsNumber)} />
+          </div>
+          <div className="App-actions">
+            <button onClick={() => play()}>Play</button>
+          </div>
+        </form>
+        {results &&
+          <output className="App-result">
+            Du vann {results ? results.wins : ''} ggr av {count}.
+          </output>
+        }
+      </main>
     </div>
   );
 }

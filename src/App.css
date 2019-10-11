@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -8,7 +10,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +20,39 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.App-main {
+  padding: 3vh 3vw;
+}
+
+.App-form {
+  display: grid;
+  grid-template-columns: [form-start] 1fr [form-middle] 5fr [form-end];
+  grid-gap: 1rem;
+}
+
+.App-input {
+  padding: 1rem;
+}
+
+.App-input:nth-child(1) {
+  grid-column: form-start / form-end;
+}
+
+.App-input:nth-child(2) {
+  grid-column: form-start / form-middle;
+}
+
+.App-actions {
+  grid-column: form-middle / form-end;
+  padding: 1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
+.App-result {
+  font-size: 4rem;
 }
