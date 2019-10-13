@@ -18,22 +18,14 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
-
 .App-main {
   padding: 3vh 3vw;
 }
 
 .App-form {
   display: grid;
-  grid-template-columns: [form-start] 1fr [form-middle] 5fr [form-end];
-  grid-gap: 1rem;
-}
-
-.App-input {
-  padding: 1rem;
+  grid-template-columns: [form-start] 1fr [form-middle] 1fr [form-end];
+  grid-gap: calc(10px + 2vmin);
 }
 
 .App-input:nth-child(1) {
@@ -46,11 +38,11 @@
 
 .App-actions {
   grid-column: form-middle / form-end;
-  padding: 1rem;
 }
 
-button {
+button, input[type="number"] {
   font-size: 1rem;
+  width: 100%;
 }
 
 .App-result {

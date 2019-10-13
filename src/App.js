@@ -5,15 +5,14 @@ function App() {
   const [changeMind, setChangeMind] = useState(true);
   const [count, setCount] = useState(1000);
   const [results, setResults] = useState();
-  const monty = () => {
-    fetch(`http://localhost:4080/monty?count=${count}&nah=${changeMind}`, {
-      headers: {
-        'Access-Control-Allow-Origin': 'http://localhost:4080/'
+  const monty = async () => {
+    const response = await fetch(`http://localhost:4080/monty?count=${count}&nah=${changeMind}`, {
+      headers: { // CORS, server is also set up to handle this
+        'Origin': window.location.origin
       }
-    }).then((response) => response.json()).then(json => {
-      console.log(json);
-      setResults(json);
     });
+    const json = await response.json();
+    setResults(json);
   };
   const play = () => {
     monty();

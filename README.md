@@ -1,3 +1,9 @@
+# Monty Hall evidence
+
+## Server
+
+Run `node server.js` to start server. It will run on port `4080`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

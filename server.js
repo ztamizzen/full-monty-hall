@@ -2,13 +2,9 @@ const express = require('express');
 const app = express();
 const port = 4080;
 const Monty = require('./monty');
-// just to trigger caching of the loops, cause why now?
-/* console.log('Wins: Change my mind!', Monty());
-console.log('Wins: I\'m fine thanks...', Monty(false)); */
-app.use(express.static('public'));
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:4080/*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
     next();
 });
 app.use((err, req, res, next) => {
