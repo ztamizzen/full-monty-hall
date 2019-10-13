@@ -32,7 +32,7 @@ function App() {
               type="checkbox"
               id="changeMind"
               checked={changeMind}
-              onChange={(event) => setChangeMind(event.target.checked)} />
+              onChange={(e) => setChangeMind(e.target.checked)} />
           </div>
           <div className="App-input">
             <input
