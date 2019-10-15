@@ -15,6 +15,7 @@ function App() {
     setResults(json);
   };
   const play = () => {
+    // montyPromise();
     monty();
   };
   return (
