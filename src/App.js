@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Result from './Result';
 import './App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   const [count, setCount] = useState(1000);
   const [results, setResults] = useState();
   const monty = async () => {
-    const response = await fetch(`http://localhost:4080/monty?count=${count}&nah=${changeMind}`, {
+    const response = await fetch(`http://localhost:8080/montyhall/${count}/${changeMind}`, {
       headers: { // CORS, server is also set up to handle this
         'Origin': window.location.origin
       }
@@ -45,11 +46,7 @@ function App() {
             <button onClick={() => play()}>Play</button>
           </div>
         </form>
-        {results &&
-          <output className="App-result">
-            Du vann {results ? results.wins : ''} ggr av {count}.
-          </output>
-        }
+        <Result result={results} count={count} />
       </main>
     </div>
   );

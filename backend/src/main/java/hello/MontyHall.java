@@ -11,7 +11,7 @@ public class MontyHall {
         this.switchDoor = switchDoor;
     }
 
-    public Integer run() {
+    public int run() {
         int i = 0;
         int wins = 0;
         do {

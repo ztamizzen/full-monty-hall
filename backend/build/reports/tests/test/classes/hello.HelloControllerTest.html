@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.102s</div>
+<div class="counter">0.377s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">getHello</td>
-<td class="success">0.011s</td>
+<td class="success">0.030s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getMontyHall</td>
-<td class="success">0.091s</td>
+<td class="success">0.347s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,12 +92,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-10-15 18:07:15.213  INFO 26432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.HelloControllerTest], using SpringBootContextLoader
-2019-10-15 18:07:15.216  INFO 26432 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [hello.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-10-15 18:07:15.216  INFO 26432 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hello.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-10-15 18:07:15.235  INFO 26432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hello.Application for test class hello.HelloControllerTest
-2019-10-15 18:07:15.238  INFO 26432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-10-15 18:07:15.240  INFO 26432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@377e9c25, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1567380b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7b6d93, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d84c64c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7ed8fa6d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d332dd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@91fcae1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1232db28, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b805091, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@608ecae6]
+<pre>2019-10-17 18:04:55.482  INFO 41432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.HelloControllerTest], using SpringBootContextLoader
+2019-10-17 18:04:55.486  INFO 41432 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [hello.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-17 18:04:55.487  INFO 41432 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hello.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-17 18:04:55.517  INFO 41432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hello.Application for test class hello.HelloControllerTest
+2019-10-17 18:04:55.520  INFO 41432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-17 18:04:55.522  INFO 41432 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@91fcae1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1232db28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b805091, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@608ecae6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17314cd4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13de2e81, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3af3e0b3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c3cd4f1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31767a4e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@53bee0c7]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -107,14 +107,14 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.6.RELEASE)
 
-2019-10-15 18:07:15.286  INFO 26432 --- [    Test worker] hello.HelloControllerTest                : Starting HelloControllerTest on MATSASUS with PID 26432 (started by Mats in C:\Users\Mats\Documents\GitHub\full-monty-hall\backend)
-2019-10-15 18:07:15.287  INFO 26432 --- [    Test worker] hello.HelloControllerTest                : No active profile set, falling back to default profiles: default
-2019-10-15 18:07:16.120  INFO 26432 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-15 18:07:16.729  INFO 26432 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2019-10-15 18:07:16.730  INFO 26432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2019-10-15 18:07:16.741  INFO 26432 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-15 18:07:16.770  INFO 26432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
-2019-10-15 18:07:16.818  INFO 26432 --- [    Test worker] hello.HelloControllerTest                : Started HelloControllerTest in 1.571 seconds (JVM running for 9.102)
+2019-10-17 18:04:55.638  INFO 41432 --- [    Test worker] hello.HelloControllerTest                : Starting HelloControllerTest on MATSASUS with PID 41432 (started by Mats in C:\Users\Mats\Documents\GitHub\full-monty-hall\backend)
+2019-10-17 18:04:55.639  INFO 41432 --- [    Test worker] hello.HelloControllerTest                : No active profile set, falling back to default profiles: default
+2019-10-17 18:04:57.536  INFO 41432 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 18:04:59.350  INFO 41432 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-17 18:04:59.352  INFO 41432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-17 18:04:59.379  INFO 41432 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-17 18:04:59.606  INFO 41432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 253 ms
+2019-10-17 18:04:59.852  INFO 41432 --- [    Test worker] hello.HelloControllerTest                : Started HelloControllerTest in 4.3 seconds (JVM running for 19.887)
 Let's inspect the beans provided by Spring Boot:
 application
 applicationTaskExecutor
@@ -391,7 +391,7 @@ welcomePageHandlerMapping
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2019-okt-15 18:07:17</p>
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2019-okt-17 18:05:02</p>
 </div>
 </div>
 </body>
